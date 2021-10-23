@@ -10,3 +10,4 @@ The dataset used in the project is taken from:
  
  The project is employed in Python3.6 in GoogleColab.
  A web app for the model is developed using Flask in Colab environment.
+![app_fromt](https://user-images.githubusercontent.com/91037105/138574109-25b64bee-c6c1-463f-aa38-28c8b1264afb.png)
