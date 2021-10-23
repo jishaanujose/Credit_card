@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Credit card default detection</title>
+
+</head>
+
+<body bgcolor='black' text='white'>
+
+<h1>
+
+<b>
+
+<i>
+
+<font size=15>
+
+Credit card
+
+</font>
+
+</i>
+
+</b>
+
+</h1>
+
+<div style="background-color:white">
+
+<hr>
+
+<hr></div>
+
+<h2> Enter the details to check whether next month payment will be done or not</h2>
+
+<h4>
+
+<form action="{{url_for('predict')}}" method="post">
+
+<p> Limit balance : <input type='text' name='LIMIT_BAL' id='LIMIT_BAL' placeholder='Enter amount' required='required' />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sex : <input type='text' name='SEX' id='SEX' placeholder='Enter 1 for M, 2 for F' required='required'/></p>
+
+<p> Education : <input type='text' name='EDUCATION' id='EDUCATION' placeholder='1=graduate school, 2=university, 3=high school, 4=others, 5=unknown, 6=unknown' required='required' />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Marriage : <input type='text' name='MARRIAGE' id='MARRIAGE' placeholder='1=married, 2=single, 3=others' required='required' /></p>
+
+<p>Age : <input type='text' name='AGE' id='AGE' placeholder='Enter your age' required='required' /></p>
+
+<p> Payment 0 : Pay 0: <input type='text' name='PAY_0' id='PAY_0' placeholder='-1=pay duly, 1=payment delay for one month, 2=payment delay for two months' required='required' />
+
+&nbsp;&nbsp;&nbsp; Pay 2 : <input type='text' name='PAY_2' id='PAY_2' placeholder='' required='required' />
+
+&nbsp;&nbsp;&nbsp; Pay 3 : <input type='text' name='PAY_3' id='PAY_3' placeholder='' required='required' /></p>
+
+<p> Pay 4 : <input type='text' name='PAY_4' id='PAY_4' placeholder='' required='required' />
+
+&nbsp;&nbsp;&nbsp; Pay 5 : <input type='text' name='PAY_5' id='PAY_5' placeholder='' required='required' />
+
+&nbsp;&nbsp;&nbsp; Pay 6 : <input type='text' name='PAY_6' id='PAY_6' placeholder='' required='required' /></p>
+
+<p> Bill amount : Amt0 : <input type='text' name='BILL_AMT1' id='BILL_AMT1' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amt2 : <input type='text' name='BILL_AMT2' id='BILL_AMT2' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amt3 : <input type='text' name='BILL_AMT3' id='BILL_AMT3' placeholder='Enter amount' required='required' /></p>
+<p> Amt4 : <input type='text' name='BILL_AMT4' id='BILL_AMT4' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AMt5 : <input type='text' name='BILL_AMT5' id='BILL_AMT5' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amt6 : <input type='text' name='BILL_AMT6' id='BILL_AMT6' placeholder='Enter amount' required='required' /></p>
+
+<p> Pay amount : Amt0 : <input type='text' name='PAY_AMT1' id='PAY_AMT1' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amt1 : <input type='text' name='PAY_AMT2' id='PAY_AMT2' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amt2 : <input type='text' name='PAY_AMT3' id='PAY_AMT3' placeholder='Enter amount' required='required' /></p>
+<p> Amt3 : <input type='text' name='PAY_AMT4' id='PAY_AMT4' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amt4 : <input type='text' name='PAY_AMT5' id='PAY_AMT5' placeholder='Enter amount' required='required' />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amt5 : <input type='text' name='PAY_AMT6' id='PAY_AMT6' placeholder='Enter amount' required='required' /></p>
+
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+</h4>
+<h2>
+<b>
+{{ prediction_text }}
+</b>
+</h2>
+</body>
+
+</html>
