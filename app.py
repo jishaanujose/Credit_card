@@ -53,4 +53,5 @@ def predict():
 
     return render_template('text3.html', prediction_text='Credit card prediction $ {}'.format(p))
 
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
