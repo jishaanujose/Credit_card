@@ -1,10 +1,8 @@
 import numpy as np 
 import pandas as pd 
-from flask_ngrok import run_with_ngrok
 import pickle
 from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
-run_with_ngrok(app)
 model = pickle.load(open('model.pkl','rb'))
 print('model loaded')
 
