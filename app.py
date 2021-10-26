@@ -3,8 +3,9 @@ import pandas as pd
 import pickle
 from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
-model = pickle.load(open('model.pkl','rb'))
-print('model loaded')
+model_path = 'saved_models/model.pkl'
+model = pickle.load(open(model_path,'rb'))
+
 
 def feature_transform(X):
     ## converting marriage and education to categorical
@@ -42,7 +43,6 @@ def predict():
     df=pd.DataFrame(final_features, columns=name)
     df1=feature_transform(df)
     final_features = df1.iloc[:,:]
-    print(final_features)
     prediction = model.predict(final_features)
     if prediction==0:
       p='Not pay'
