@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
-model_path = 'saved_models/model.pkl'
+model_path = 'models/model.pkl'
 model = pickle.load(open(model_path,'rb'))
 
 
