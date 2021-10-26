@@ -25,7 +25,8 @@ The dataset used in the project is taken from:
  ![py](https://user-images.githubusercontent.com/91037105/138576218-d9395084-be12-419d-9d1f-bccdd39845a0.jpeg)![num](https://user-images.githubusercontent.com/91037105/138576219-3ab0ded1-0210-4204-b739-bf7f9a2faff3.png)![sci](https://user-images.githubusercontent.com/91037105/138576222-038392d3-2159-42d0-b0b5-f26f337bc883.png)
 ![fl](https://user-images.githubusercontent.com/91037105/138576225-19ba8982-6caf-4a0f-b0b5-1f61445cfaf7.png)![co](https://user-images.githubusercontent.com/91037105/138576229-bf329d83-4854-4851-9511-48d47d28839e.png)
 
-
+# Web app link
+https://creditcardpredict.herokuapp.com
 
 # Web app front
 ![app_fromt](https://user-images.githubusercontent.com/91037105/138574109-25b64bee-c6c1-463f-aa38-28c8b1264afb.png)
